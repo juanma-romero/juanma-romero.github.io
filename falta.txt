@@ -1,0 +1,2 @@
+comando para actualizar pagina en remoto
+git push origin master
