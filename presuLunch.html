@@ -9,7 +9,7 @@
 
   <link rel="shortcut icon" href="assets/images/favicon-gde-128x128.webp" type="image/x-icon">
   <meta name="description" content="Servicio de catering para todo tipo de evento">
-  <title>Zulmy Catering - Servicio formal con servicio</title>
+  <title>Zulmy Catering- Presupuesto Servicio de Lunch</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="canonical" href="index.html">
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
@@ -25,7 +25,15 @@
   <script async  src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
   <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-  
+  <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+  <style amp-custom>
+    amp-accordion section[expanded] .show-more {
+      display: none;
+    }
+    amp-accordion section:not([expanded]) .show-less {
+      display: none;
+    }
+  </style>  
 </head>
 <body>
     <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-5R5DTS6&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
@@ -71,18 +79,65 @@
         <div class="mbr-container">
             <div class="mbr-text counter-container mbr-fonts-style display-7">
                 <h1 style="font-size: 24px">Presupuesto</h1>
-                <p>Menú formal con servicio integral.</p>
-                <p><i>El Precio varía de acuerdo al plato principal elegido</i></p>
-                <ul>
-                    <li><strong>Recepción</strong> - <a href="servicioLunch.html">Bruschettas, Pinchos, Canastitas, Empanadas, Chips.</a></li>
-                    <li><strong>Entrada</strong> - Matambre arrollado, Tomates rellenos, Rolls primavera.</li>
-                    <li><strong>Principal</strong> - <a href="#opciones">Mira las opciones y precios</a>.</li>
-                    <li><strong>Postre</strong> - <a href="cateringPostres.html">Brownies, Peras al vino tinto, Scones, Flan con crema.</a></li>
-                    <li><strong>Mesa Dulce</strong> - Tortas, <a href="cateringPostres.html#shots">Shots</a>, Café, Infusiones.</li>
-                </ul>
-                <p>Plato Principal infantil (de 6 a 12 años): Milanesa, Patitas de pollo, Pizzetas. Cada uno por $450.</p>
-                <p>Menores de 6 sin cargo</p>
-                <p>Guarniciones: Papas Rústicas, Papas a la Crema, Torre de Vegetales.</p>
+                <p>Servicio de Lunch con Postre.</p>
+                <hr>
+                                
+                <p><strong>Canapés:</strong></p>
+                <small>Podes seleccionar hasta 8 variedades de las siguientes opciones.</small>
+                <amp-accordion>
+                  <section expanded>
+                    <h4>
+                      <span class="show-more">Ver opciones</span>
+                      <span class="show-less">ocultar opciones</span>
+                    </h4>
+                    <ul>
+                      <li>Bruschettas capresse</li>
+                      <li>Bruchettas jamon crudo, rucula y cherry</li>
+                      <li>Pinchos de bondiola, ciruela y ajíes</li>
+                      <li>Pinchos capresse</li>
+                      <li>Chips de jamón crudo, rúcula y tomates cherry</li>
+                      <li>Canastita de panceta, ciruela y queso</li>
+                      <li>Canastita capresse</li>
+                      <li>canastitas de panceta, puerro, crema, cebolla y parmesano</li>
+                      <li>Mini hamburguesa con cheddar y tomate</li>
+                      <li>Empanada de carne o pollo</li>
+                      <li>Chips de peceto al horno y tomate</li>
+                      <li>Sandwiches de matambre</li>
+                      <li>Pizzetas de muzzarella o napolitana</li>
+                      <li>Pebetes de jamón y queso</li>
+                      <li>Fosforitos o media luna con j y queso</li>
+                      <li>Chips de pollo al escabeche</li>
+                      <li>Mini árabes de atún y ciboulette</li>
+                  </ul>
+                    
+                  </section>
+                </amp-accordion>  
+                
+                <hr>
+                <p><strong>Postre:</strong></p>
+                <small>Una torta cada 10 personas</small>
+                <amp-accordion>
+                  <section expanded>
+                    <h4>
+                      <span class="show-more">Ver opciones</span>
+                      <span class="show-less">ocultar opciones</span>
+                    </h4>
+                    <ul>                
+                      <li>Lemon Pie</li>
+                      <li>Brownie</li>
+                      <li>Cheescake de frutos rojos</li>
+                      <li>Mousse de chocolate</li>
+                      <li>Tarta de manzana</li>
+                      <li>Pasta frola</li>
+                      <li>Tarta de frutilla </li>
+                      <li>Tarta de pera</li>
+                    </ul>
+                  </section>
+                </amp-accordion>
+                <hr>
+                <p>Precio por persona $220.</p>
+                <p><i>Contratando para 30 personas o más podes elegir 10 variedades de canapés</i></p>
+                
                 <div class="mbr-section-btn align-center"><a class="btn btn-primary display-4" href="contacto.html">Contacto</a></div>
             </div>
             </div>
@@ -96,92 +151,52 @@
             <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4 bg-primary">
                 <div class="card-wrapper" id="opciones">
                     <div class="card-img">
-                        <amp-img src="assets/images/ofertasWebp/canelones.webp" layout="responsive" width="255" height="170" alt="Canelones con salsa mixta">
+                        <amp-img src="assets/images/canastita450px-450x453.webp" layout="responsive" width="255" height="170" alt="Canelones con salsa mixta">
                             
                         </amp-img>
                     </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style align-left mbr-light display-2">
-                            Plato Principal opción Cannelloni 
-                        </h4>
-                        <p class="mbr-text mbr-fonts-style align-left display-4">
-                            Cannelloni de pollo y verdura o verdura sola, con salsa a elección.</p>
-                        <p>$550 por persona</p>
-                        
-                    </div>
+                    
                 </div>
             </div>
             
             <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4 bg-danger">
                 <div class="card-wrapper">
                     <div class="card-img">
-                        <amp-img src="assets/images/ofertasWebp/lomo.webp" layout="responsive" height="170" width="255" alt="Lomo a las finas hierbas">
+                        <amp-img src="assets/images/croissant-700x401.webp" layout="responsive" height="170" width="255" alt="Lomo a las finas hierbas">
                             
                         </amp-img>
                     </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style align-left mbr-light display-2">
-                                Plato Principal opción Lomo
-                        </h4>
-                        <p class="mbr-text mbr-fonts-style align-left display-4">
-                            Lomo a las finas hierbas. Carne exquisitamente suave y jugosa, aroma encantador</p>
-                        <p>$850 por persona</p>
-                    </div>
-                </div>
+                    
             </div>
 
             <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4 bg-primary">
                 <div class="card-wrapper">
                     <div class="card-img">
-                        <amp-img src="assets/images/ofertasWebp/ribs.webp" layout="responsive" height="170" width="255" alt="Ribs a la barbacoa">
+                        <amp-img src="assets/images/empascerca-450x338.webp" layout="responsive" height="170" width="255" alt="Ribs a la barbacoa">
                             
                         </amp-img>
                     </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style align-left mbr-light display-2">
-                            Plato Principal opción Ribs
-                        </h4>
-                        <p class="mbr-text mbr-fonts-style align-left display-4">
-                            Ribs de cerdo con salsa barbacoa. Sabor agridulce perfecto.
-                        </p>
-                        <p>$650 por persona</p>
-                    </div>
+                    
                 </div>
             </div>
 
             <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4 bg-danger">
                 <div class="card-wrapper">
                     <div class="card-img">
-                        <amp-img src="assets/images/ofertasWebp/supremas-de-pollo.webp" layout="responsive" height="170" width="255" alt="Supremas de pollo al grille">
+                        <amp-img src="assets/images/brusche-mozoopt-450x266.webp" layout="responsive" height="170" width="255" alt="Supremas de pollo al grille">
                             
                         </amp-img>
                     </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style align-left mbr-light display-2">
-                            Plato Principal opción Pollo
-                        </h4>
-                        <p class="mbr-text mbr-fonts-style align-left display-4">
-                            Blanco de Ave al grille con salsa de crema.
-                        </p>
-                        <p>$600 por persona</p>
-                    </div>
+                    
                 </div>
             </div>
             <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4 bg-primary">
                 <div class="card-wrapper">
                     <div class="card-img">
-                        <amp-img src="assets/images/ofertasWebp/peceto.webp" layout="responsive" height="170" width="255" alt="Peceto con salsa de champignones">
+                        <amp-img src="assets/images/toracercaopt-450x338.webp" layout="responsive" height="170" width="255" alt="Peceto con salsa de champignones">
                         </amp-img>
                     </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style align-left mbr-light display-2">
-                            Plato Principal opción Peceto
-                        </h4>
-                        <p class="mbr-text mbr-fonts-style align-left display-4">
-                            Larga cocción para lograr un plato sabroso y mágico.
-                        </p>
-                        <p>$700 por persona</p>
-                    </div>
+                    
                 </div>
             </div>
         </div>
